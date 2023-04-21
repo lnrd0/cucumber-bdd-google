@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-04-21T12:58:09.786Z",
+    "end": "2023-04-21T12:58:10.210Z",
+    "duration": 424,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "220895d0-3a48-45e3-a2d5-55335a34e4fa",
+      "title": "",
+      "fullFile": "cypress\\integration\\GitLab.feature",
+      "file": "cypress\\integration\\GitLab.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "771d8de2-033a-49f9-9211-b508b7267c69",
+          "title": "GitLab Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Opening a search engine page",
+              "fullTitle": "GitLab Page Opening a search engine page",
+              "timedOut": null,
+              "duration": 371,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"videos/GitLab.feature.mp4\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: I open GitLab page",
+                "estack": "Error: Step implementation missing for: I open GitLab page\n    at Context.resolveAndRunStepDefinition (http://localhost:52903/__cypress/tests?p=cypress\\integration\\GitLab.feature:6974:11)\n    at Context.eval (http://localhost:52903/__cypress/tests?p=cypress\\integration\\GitLab.feature:6289:35)",
+                "diff": null
+              },
+              "uuid": "1598e10d-1ff8-4be4-9c02-c59365db8da9",
+              "parentUUID": "771d8de2-033a-49f9-9211-b508b7267c69",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1598e10d-1ff8-4be4-9c02-c59365db8da9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 371,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

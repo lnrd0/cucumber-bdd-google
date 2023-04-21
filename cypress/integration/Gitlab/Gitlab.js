@@ -1,8 +1,8 @@
 import {Given,Then} from 'cypress-cucumber-preprocessor/steps'
 
-const url = 'https://google.com'
+const url = 'https://gitlab.com/michelleamesquita/devsecops2/'
 
-Given('I open Google page', () => {
+Given('I open GitLab page', () => {
   cy.visit(url)
 })
 

@@ -1,0 +1,48 @@
+[
+  {
+    "description": "  I want to open a page",
+    "keyword": "Feature",
+    "name": "GitLab Page",
+    "line": 1,
+    "id": "gitlab-page",
+    "tags": [],
+    "uri": "Gitlab.feature",
+    "elements": [
+      {
+        "id": "gitlab-page;opening-a-gitlab-pipeline-page",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Opening a GitLab pipeline page",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I open GitLab page",
+            "result": {
+              "status": "passed",
+              "duration": 2559000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I see \"Michelle / case-devsecops\" in the title",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
